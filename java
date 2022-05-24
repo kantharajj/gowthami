@@ -2,7 +2,7 @@ pipeline {
          agent any
          environment{
           
-          PATH = "C:\\WINDOWS\\SYSTEM32"
+          MY_FILE = fileExists 'gowthami'
          }
 stages {
      stage('clone repo'){
